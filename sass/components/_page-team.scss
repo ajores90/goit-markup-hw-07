@@ -7,7 +7,7 @@
   list-style-type: none;
 }
 
-.team__title {
+.section__title {
   color: $color-title;
   font-weight: 700;
   font-size: 36px;
@@ -60,7 +60,7 @@
   margin: 0;
 }
 
-.net-list {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -69,12 +69,12 @@
   list-style-type: none;
 }
 
-.net-list__item {
+.socials__item {
   width: calc(100% / 4 - 10px / 4 * 3);
   height: 44px;
 }
 
-.net-list__link {
+.socials__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -88,13 +88,13 @@
     background-color: $color-accent;
   }
 
-  &:hover .net-list__icon,
-  &:focus .net-list__icon {
+  &:hover .socials__icon,
+  &:focus .socials__icon {
     fill: $color-white;
   }
 }
 
-.net-list__icon {
+.socials__icon {
   fill: $color-icons;
   transition: fill 250ms $transition-effect;
 }

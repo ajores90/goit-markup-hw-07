@@ -1,4 +1,4 @@
-.button-portfolio {
+.filter {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -7,7 +7,7 @@
   list-style-type: none;
 }
 
-.button-portfolio__item {
+.filter__item {
   margin-right: 8px;
 
   &:last-child {
@@ -15,7 +15,7 @@
   }
 }
 
-.button-portfolio__link {
+.filter__button {
   display: block;
   background: $color-background-third;
   border-radius: 4px;
@@ -43,7 +43,7 @@
   }
 }
 
-.boxes {
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -54,7 +54,7 @@
   list-style-type: none;
 }
 
-.boxes__element {
+.project {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -65,7 +65,7 @@
   height: 404px;
 }
 
-.boxes__link {
+.project__link {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms $transition-effect;
@@ -76,20 +76,20 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:hover .boxes__overlay,
-  &:focus .boxes__overlay {
+  &:hover .project__overlay,
+  &:focus .project__overlay {
     transform: translateY(0);
   }
 }
 
-.boxes__thumb {
+.project__thumb {
   position: relative;
   width: 370px;
   height: 294px;
   overflow: hidden;
 }
 
-.boxes__overlay {
+.project__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +100,7 @@
   transition: transform 250ms $transition-effect;
 }
 
-.boxes__label {
+.project__label {
   display: flex;
   align-items: center;
   padding: 24px;

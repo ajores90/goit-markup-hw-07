@@ -1,17 +1,18 @@
-.footer-style {
+.footer {
   background: $color-background;
   padding: 60px 0;
+
+  &--contacts {
+    margin: 0;
+    padding-left: 0;
+  }
 }
 
-.footer {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
 
-.footer__link {
-  margin: 0;
-  padding-left: 0;
-}
 .footer__map {
   margin: 0;
   padding: 0;
@@ -45,7 +46,7 @@
   }
 }
 
-.footer__nav {
+.footer__link {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: $color-text;
@@ -63,11 +64,15 @@
   }
 }
 
-.footer-second {
+.footer-socials {
   margin-left: 70px;
+
+  &--dark {
+    fill: $color-white;
+  }
 }
 
-.footer-second__title {
+.footer-socials__title {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   color: $color-white;
@@ -79,7 +84,7 @@
   margin: 0;
 }
 
-.footer-second__icons {
+.footer-socials__icons {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -88,7 +93,7 @@
   list-style-type: none;
 }
 
-.footer-second__link {
+.footer-socials__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -104,15 +109,11 @@
   }
 }
 
-.footer-second__socials {
-  fill: $color-white;
-}
-
-.footer-email {
+.footer-subscription {
   margin-left: auto;
 }
 
-.footer-email__title {
+.footer-subscription__title {
   color: $color-white;
   font-family: 'Roboto';
   font-style: normal;
@@ -125,13 +126,13 @@
   margin-bottom: 20px;
 }
 
-.footer-email__form {
+.footer-subscription__form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-email__input {
+.footer-subscription__input {
   background-color: $color-background;
   width: 358px;
   height: 50px;
