@@ -10,6 +10,10 @@
 .header__container {
   display: flex;
   align-items: center;
+
+  // @media screen and(max-width:$tablet) {
+  //   flex-direction: row-reverse;
+  // }
 }
 
 .navigation {
@@ -24,10 +28,14 @@
 }
 
 .navigation__menu {
-  display: flex;
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .navigation__item {
@@ -76,12 +84,16 @@
 }
 
 .contacts {
-  display: flex;
+  display: none;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
   list-style-type: none;
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .contacts__checklist {
@@ -144,4 +156,29 @@
   fill: $color-text;
   margin-right: 10px;
   transition: fill 250ms $transition-effect;
+}
+
+.mobile-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu .icon-close {
+  display: none;
+}
+
+.mobile-menu.js-open-menu .icon-close {
+  display: block;
+}
+
+.mobile-menu.js-open-menu .icon-menu {
+  display: none;
+}
+.icon-close {
+}
+
+.icon-menu {
 }
